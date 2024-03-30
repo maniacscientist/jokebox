@@ -1,4 +1,5 @@
-Turns YouR tExt iNTO crAZY ONe
+This useless lib contains various functions to spice up your code and get busted on code review.
+But it might be fun
 
 ## Install
 
@@ -8,13 +9,28 @@ $ npm install jokebox
 
 ## Usage
 
-cRazYtEXt('Hello World');
+// turns YouR tExt iNTO crAZY ONe
+jokebox.cRazYtEXt('Hello World');
 //=> HELlO worLd
+
+// maybe you will be shot. If so, message appears and process exits
+jokebox.russianRoulette();
+//=> ___$$#BANG!!#$$__
+
+// performs swear diarrhoea within given duration
+jokebox.swearDiarrhoea();
+//=> קס!        ÅLaHUe!!!1        сУКа!!!!!11       קס!!   Бля!!!!!            זין!!!!!!
 
 ## API
 
 ### cRazYtEXt(text)
 returns crazy text
+
+### russianRoulette()
+terminates process if you are not lucky
+
+### swearDiarrhoea = (duration, period, vocabulary) 
+performs swear diarrhoea within given duration
 
 ## Security
 Dont be so serious, you can always have new datacenter instead of blown one
