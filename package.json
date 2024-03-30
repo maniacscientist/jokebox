@@ -2,6 +2,10 @@
   "name": "jokebox",
   "version": "0.0.2",
   "description": "Useless, but probably funny functions to spice up your code",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maniacscientist/jokebox.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
