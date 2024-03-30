@@ -9,17 +9,20 @@ $ npm install jokebox
 
 ## Usage
 
-// turns YouR tExt iNTO crAZY ONe
+
 jokebox.cRazYtEXt('Hello World');
+
 //=> HELlO worLd
 
-// maybe you will be shot. If so, message appears and process exits
-jokebox.russianRoulette();
-//=> ___$$#BANG!!#$$__
 
-// performs swear diarrhoea within given duration
+jokebox.russianRoulette();
+
+//=> BANG!
+
+
 jokebox.swearDiarrhoea();
-//=> קס!        ÅLaHUe!!!1        сУКа!!!!!11       קס!!   Бля!!!!!            זין!!!!!!
+
+//=> ÅLaHUe!!!1     сУКа!!!!!11  קס!              קס!!   Бля!!!!!            זין!!!!!!
 
 ## API
 
