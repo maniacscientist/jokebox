@@ -34,7 +34,7 @@ const badWords = [
 ];
 
 /**
- * performs swear diarea within given duration
+ * performs swear diarrhoea within given duration
  * @param {number} duration total duration in milliseconds
  * @param {number} period period in milliseconds
  * @param {Array<string>} vocabulary additional vocabulary
@@ -54,8 +54,30 @@ let swearDiarrhoea = (duration = 100 * 1000, period = 2000, vocabulary = badWord
     }
 };
 
+const jokeSources = [{ 
+        url: 'https://official-joke-api.appspot.com/random_joke', 
+        getter: response => `${response.setup} -${response.punchline}` 
+    }, {
+        url: 'https://icanhazdadjoke.com/',
+        getter: response => response.joke
+    },
+];
+
+/**
+ * returns random joke
+ * @returns {Promise<string>}
+ */
+let fetchJoke = async () => {
+    let sourceIndex = Math.floor(Math.random() * jokeSources.length);
+    let source = jokeSources[sourceIndex];
+    let response = await fetch(source.url, { headers: { accept: 'application/json' } });
+    let object = await response.json();
+    return source.getter(object);
+};
+
 module.exports = {
     cRazYtEXt,
     russianRoulette,
     swearDiarrhoea,
+    fetchJoke,
 };

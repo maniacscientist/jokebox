@@ -24,6 +24,10 @@ jokebox.swearDiarrhoea();
 
 //=> ÅLaHUe!!!1     сУКа!!!!!11  קס!              קס!!   Бля!!!!!            זין!!!!!!
 
+console.log(await jokebox.fetchJoke());
+
+//=> Why did the kid throw the clock out the window? He wanted to see time fly!
+
 ## API
 
 ### cRazYtEXt(text)
@@ -32,8 +36,11 @@ returns crazy text
 ### russianRoulette()
 terminates process if you are not lucky
 
-### swearDiarrhoea = (duration, period, vocabulary) 
+### swearDiarrhoea(duration, period, vocabulary) 
 performs swear diarrhoea within given duration
+
+### async fetchJoke()
+returns random joke
 
 ## Security
 Dont be so serious, you can always have new datacenter instead of blown one
