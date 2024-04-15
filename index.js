@@ -60,7 +60,10 @@ const jokeSources = [{
     }, {
         url: 'https://icanhazdadjoke.com/',
         getter: response => response.joke
-    },
+    }, {
+        url: 'https://api.chucknorris.io/jokes/random',
+        getter: response => response.value
+    }
 ];
 
 /**
